@@ -101,14 +101,6 @@ chinook-azure-snowflake-pipeline/
 │   └── 04_load_stage_to_dw.sql      — full load script: DATE/TIME gen + MERGE + SALES_FACT
 │
 ├── screenshots/
-│   ├── 01_adf_pipeline_canvas.png   — full pipeline with all activities connected
-│   ├── 02_adf_pipeline_run.png      — successful monitor run (all green)
-│   ├── 03_linked_services.png       — all 5 linked services listed
-│   ├── 04_copy_activity_config.png  — source/sink/staging settings
-│   └── 05_snowflake_dw_tables.png   — Snowflake DW schema with row counts
-│
-└── docs/
-    └── submission_report.pdf        — full project report with step-by-step explanation
 ```
 
 ---
@@ -187,17 +179,6 @@ Create 5 linked services (see `/docs/submission_report.pdf` for detailed config)
 4. Connect with dependency arrows (see pipeline execution order above)
 5. Paste scripts from `sql/04_load_stage_to_dw.sql` into each Script Activity
 6. Publish All → Debug → Monitor
-
----
-
-## Screenshots to Add
-
-After running your pipeline, capture these screenshots and add them to the `/screenshots` folder:
-
-1. **ADF pipeline canvas** — full view of all connected activities
-2. **ADF Monitor run** — click a successful run to show all activities green
-3. **Linked services list** — Manage → Linked Services
-4. **Snowflake DW tables** — run the verification query and screenshot results
 
 ---
 
